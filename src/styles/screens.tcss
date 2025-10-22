@@ -1,0 +1,16 @@
+/* 
+这个文件包含了所有屏幕相关的样式
+*/
+
+
+HomeScreen {
+    align: center middle;
+
+    #logo {
+        text-align: center;
+    }
+
+    #welcome-message {
+        text-align: center;
+    }
+}
