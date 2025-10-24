@@ -19,14 +19,19 @@ from textual.widgets import Footer, Header
 
 # 项目内模块导入
 from models.app_config import AppConfig
-from screens import HomeScreen
+from screens import HomeScreen, MenuScreen
 
 
 class MainApp(App):
     """NapCatQQ CLI Application"""
+    
+    BINDINGS = [
+        ("ctrl+q", "quit", "退出程序"),
+    ]
 
     SCREENS = {
         "home": HomeScreen,
+        "menu": MenuScreen,
     }
     CSS_PATH = [
         "styles/screens.tcss",

@@ -5,8 +5,8 @@ description = "NapCatQQ 跨平台管理器"
 authors = [
     {name = "AQiaoYo", email = "AQiaoYo@qq.com"},
 ]
-dependencies = ["httpx>=0.28.1", "textual>=6.1.0"]
-requires-python = ">=3.12"
+dependencies = ["httpx>=0.28.1", "textual[syntax]>=6.4.0", "textual-dev>=1.8.0", "nuitka>=2.8.4"]
+requires-python = "==3.12.*"
 readme = "README.md"
 license = {text = "GPLv3"}
 
@@ -29,8 +29,3 @@ line_length = 120
 import_heading_stdlib = "标准库导入"
 import_heading_thirdparty = "第三方库导入"
 import_heading_firstparty = "项目内模块导入"
-
-[dependency-groups]
-dev = [
-    "nuitka>=2.7.16",
-]

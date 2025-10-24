@@ -4,13 +4,32 @@
 
 
 HomeScreen {
-    align: center middle;
+    layout: vertical;
 
     #logo {
+        margin-top: 2;
         text-align: center;
     }
 
     #welcome-message {
         text-align: center;
+    }
+    
+    #menu-container {
+        align: center middle;
+    }
+
+    MenuItem {
+        border-left: double $border-blurred;
+        padding: 1 2; 
+        margin: 1; 
+        width: 60;
+        height: auto;
+        background: $boost;
+        content-align: left middle;
+    }
+
+    MenuItem:hover {
+        background: $surface;
     }
 }
