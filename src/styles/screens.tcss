@@ -33,3 +33,38 @@ HomeScreen {
         background: $surface;
     }
 }
+
+
+ManagerScreen {
+
+    #manager-tabs {
+        margin: 1 2;
+    }
+
+    #app-actions {
+        align: right bottom;
+    }
+
+    #update-btn {
+        display: none;
+    }
+
+
+    AppPage {
+        height: auto;
+    }
+
+    AppWidget {
+        padding: 1 2;
+        background: $boost;
+        border: round $border-blurred;
+        height: 8;
+    }
+
+    AppInfo {
+        padding: 1 2;
+        background: $boost;
+        border: round $border-blurred;
+        height: auto;
+    }
+}

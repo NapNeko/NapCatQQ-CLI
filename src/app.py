@@ -15,20 +15,23 @@ NapCatQQ CLI Application
 
 # 第三方库导入
 from textual.app import App
+from utils.log import logging
 
 # 项目内模块导入
-from screens import HomeScreen
+from screens import HomeScreen, ManagerScreen
 
 
 class MainApp(App):
     """NapCatQQ CLI Application"""
-    
+
     BINDINGS = [
         ("ctrl+q", "quit", "退出程序"),
+        ("h", "push_screen('home')", "首页"),
     ]
 
     SCREENS = {
         "home": HomeScreen,
+        "manager": ManagerScreen,
     }
     CSS_PATH = [
         "styles/screens.tcss",
