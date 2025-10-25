@@ -14,12 +14,10 @@ NapCatQQ CLI Application
 """
 
 # 第三方库导入
-from textual.app import App, ComposeResult
-from textual.widgets import Footer, Header
+from textual.app import App
 
 # 项目内模块导入
-from models.app_config import AppConfig
-from screens import HomeScreen, MenuScreen
+from screens import HomeScreen
 
 
 class MainApp(App):
@@ -31,7 +29,6 @@ class MainApp(App):
 
     SCREENS = {
         "home": HomeScreen,
-        "menu": MenuScreen,
     }
     CSS_PATH = [
         "styles/screens.tcss",
